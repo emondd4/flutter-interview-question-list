@@ -185,3 +185,36 @@
 <h3 style="margin-top: 0;" align="start">18. How do you handle data caching and data eviction strategies in Hive, especially when dealing with limited device resources?</h3>
 <h3 style="margin-top: 0;" align="start">19. Can you explain your preferred approach to structuring and organizing Hive boxes and data access in a large-scale Flutter project?</h3>
 </p>
+
+
+<br />
+<br />
+<br />
+<br />
+<p align="center">
+<h2 style="margin-top: 0;" align="center">Flutter SQLite Question</h2>
+</p>
+
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">1. What is SQLite, and why is it commonly used as a local database in Flutter apps?</h3>
+<h3 style="margin-top: 0;" align="start">2. How do you integrate SQLite into a Flutter project? Describe the setup process and the necessary dependencies.</h3>
+<h3 style="margin-top: 0;" align="start">3. Explain the benefits of using SQLite for local data storage compared to other databases like Hive or Firebase.</h3>
+<h3 style="margin-top: 0;" align="start">4. Discuss the different data types supported by SQLite and how they map to Dart data types in Flutter.</h3>
+<h3 style="margin-top: 0;" align="start">5. How do you perform database operations like creating tables, inserting data, updating records, and executing queries in Flutter using SQLite?</h3>
+<h3 style="margin-top: 0;" align="start">6. Describe your approach to managing database migrations and handling schema changes as your app evolves.</h3>
+<h3 style="margin-top: 0;" align="start">7. How do you handle complex data structures like lists, maps, or custom objects when storing data in SQLite?</h3>
+<h3 style="margin-top: 0;" align="start">8. What strategies do you employ to optimize performance when working with large datasets in SQLite?</h3>
+<h3 style="margin-top: 0;" align="start">9. Can you explain how SQLite handles data persistence on different platforms, such as Android, iOS, web, and desktop?</h3>
+<h3 style="margin-top: 0;" align="start">10. Discuss the concept of database transactions in SQLite. When and how do you use transactions to ensure data consistency?</h3>
+<h3 style="margin-top: 0;" align="start">11. Describe your experience with testing Flutter apps that utilize SQLite for data storage. How do you write unit tests and integration tests involving SQLite?</h3>
+<h3 style="margin-top: 0;" align="start">12. How do you ensure data security and privacy when using SQLite to store sensitive information?</h3>
+<h3 style="margin-top: 0;" align="start">13. Explain the process of handling data synchronization with remote databases or backend services when using SQLite.</h3>
+<h3 style="margin-top: 0;" align="start">14. Can you discuss any challenges you've encountered while using SQLite in production apps and how you resolved them?</h3>
+<h3 style="margin-top: 0;" align="start">15. What are some best practices for database management in a large-scale Flutter project using SQLite?</h3>
+<h3 style="margin-top: 0;" align="start">16. Describe your preferred approach to structuring and organizing database-related code in a Flutter app.</h3>
+<h3 style="margin-top: 0;" align="start">17. Have you integrated SQLite with other state management solutions in Flutter, such as Provider or BLoC? How do they complement each other?</h3>
+<h3 style="margin-top: 0;" align="start">18. How do you handle data caching and eviction strategies in SQLite, especially when dealing with limited device resources?</h3>
+<h3 style="margin-top: 0;" align="start">19. Can you explain your experience with using SQLite with other Flutter packages or technologies, such as SQLite with Riverpod or SQLite with Firebase?</h3>
+<h3 style="margin-top: 0;" align="start">20. Describe any performance optimization techniques you've used in a Flutter app that uses SQLite for data storage.</h3>
+</p>
