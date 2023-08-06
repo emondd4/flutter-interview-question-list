@@ -145,12 +145,43 @@
 <h3 style="margin-top: 0;" align="start">10. Discuss the use of "Sealed Classes" or "Freezed" in BLoC to represent state changes. What benefits do they bring to the development process?</h3>
 <h3 style="margin-top: 0;" align="start">11. Describe your approach to architecting a Flutter app using BLoC for state management. How do you ensure a clear separation of concerns and maintainable code?</h3>
 <h3 style="margin-top: 0;" align="start">12. How do you optimize the performance of a Flutter app that utilizes BLoC for state management? Discuss strategies for avoiding unnecessary rebuilds and reducing app lag.</h3>
-<h3 style="margin-top: 0;" align="start">13. How do you handle state persistence in a Flutter app that uses Provider? Describe techniques for preserving state across app restarts.</h3>
-<h3 style="margin-top: 0;" align="start">14. Can you explain how you manage complex state structures with nested providers in a large-scale Flutter application?</h3>
-<h3 style="margin-top: 0;" align="start">15. Describe your experience with using Provider with other packages or technologies, such as Firebase, GraphQL, or Dio. Any integration challenges and best practices?</h3>
-<h3 style="margin-top: 0;" align="start">16. How do you optimize the performance of a Flutter app that utilizes Provider for state management? Discuss strategies for avoiding unnecessary rebuilds and reducing app lag.</h3>
-<h3 style="margin-top: 0;" align="start">17. What are the best practices for organizing providers and other related files in a Flutter project?</h3>
-<h3 style="margin-top: 0;" align="start">18. How do you handle state management in a multi-screen Flutter application with nested routes and deep navigation?</h3>
-<h3 style="margin-top: 0;" align="start">19. Describe your approach to handling authentication and authorization with Provider in a Flutter app.</h3>
-<h3 style="margin-top: 0;" align="start">20. Can you explain how Provider works with the Flutter web and desktop platforms? Are there any specific considerations or limitations to be aware of?</h3>
+<h3 style="margin-top: 0;" align="start">13. How does navigation and routing work in a Flutter app built with the BLoC pattern? Discuss techniques for handling navigation events and state changes.</h3>
+<h3 style="margin-top: 0;" align="start">14. Explain the role of "Cubit" in the BLoC pattern. How does it differ from a traditional BLoC, and when would you use one over the other?</h3>
+<h3 style="margin-top: 0;" align="start">15. Discuss the concept of "StreamSubscription" in BLoC and how it is managed to avoid memory leaks.</h3>
+<h3 style="margin-top: 0;" align="start">16. Explain the importance of testing in a BLoC-based application. How do you write unit tests, widget tests, and integration tests for BLoCs and their components?</h3>
+<h3 style="margin-top: 0;" align="start">17. What are the best practices for handling complex state structures and multiple BLoCs in a large-scale Flutter application?</h3>
+<h3 style="margin-top: 0;" align="start">18. How do you handle authentication and authorization in a BLoC-based Flutter app? Discuss strategies for managing user sessions and permissions.</h3>
+<h3 style="margin-top: 0;" align="start">19. Can you share any real-world examples of using BLoC to solve complex state management challenges in Flutter projects?</h3>
+</p>
+
+
+<br />
+<br />
+<br />
+<br />
+<p align="center">
+<h2 style="margin-top: 0;" align="center">Flutter Hive Question</h2>
+</p>
+
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">1. What is Hive, and how does it differ from other databases commonly used in Flutter, such as SQLite or Firebase?</h3>
+<h3 style="margin-top: 0;" align="start">2. Explain the benefits of using Hive as a NoSQL database for Flutter app development, especially concerning performance and simplicity.</h3>
+<h3 style="margin-top: 0;" align="start">3. How do you integrate Hive into a Flutter project? Describe the setup process and the necessary dependencies.</h3>
+<h3 style="margin-top: 0;" align="start">4. Discuss the concept of "Box" in Hive. How do you create and use boxes to store data?</h3>
+<h3 style="margin-top: 0;" align="start">5. Explain the different data types supported by Hive. How do you handle complex data structures like lists, maps, or custom objects?</h3>
+<h3 style="margin-top: 0;" align="start">6. What is Hive's "Adapters" feature, and why is it essential when dealing with custom objects?</h3>
+<h3 style="margin-top: 0;" align="start">7. How do you handle data serialization and deserialization in Hive, especially when working with complex objects?</h3>
+<h3 style="margin-top: 0;" align="start">8. Describe the process of performing CRUD (Create, Read, Update, Delete) operations in Hive.</h3>
+<h3 style="margin-top: 0;" align="start">9. How do you handle data migrations and schema changes in Hive as your app evolves?</h3>
+<h3 style="margin-top: 0;" align="start">10. Discuss Hive's support for reactive programming. How do you implement real-time updates when data changes in a Hive box?</h3>
+<h3 style="margin-top: 0;" align="start">11. Describe your approach to handling encryption and security in Hive to protect sensitive data.</h3>
+<h3 style="margin-top: 0;" align="start">12. What strategies do you employ to optimize performance when working with large datasets in Hive?</h3>
+<h3 style="margin-top: 0;" align="start">13. Can you explain how Hive handles data persistence on different platforms, such as Android, iOS, web, and desktop?</h3>
+<h3 style="margin-top: 0;" align="start">14. How do you manage data synchronization with remote databases or backend services when using Hive?</h3>
+<h3 style="margin-top: 0;" align="start">15. Describe your experience with testing Flutter apps that utilize Hive for data storage. How do you write unit tests and integration tests involving Hive?</h3>
+<h3 style="margin-top: 0;" align="start">16. Have you integrated Hive with other state management solutions in Flutter, such as Provider or BLoC? How do they complement each other?</h3>
+<h3 style="margin-top: 0;" align="start">17. What are the best practices for handling complex state structures and multiple BLoCs in a large-scale Flutter application?</h3>
+<h3 style="margin-top: 0;" align="start">18. How do you handle data caching and data eviction strategies in Hive, especially when dealing with limited device resources?</h3>
+<h3 style="margin-top: 0;" align="start">19. Can you explain your preferred approach to structuring and organizing Hive boxes and data access in a large-scale Flutter project?</h3>
 </p>
