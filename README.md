@@ -25,6 +25,39 @@
 <h3 style="margin-top: 0;" align="start">18. Describe your experience with using Flutter in combination with other technologies, such as Firebase, GraphQL, or other backend services.</h3>
 </p>
 
+
+<br />
+<br />
+<br />
+<br />
+<p align="center">
+<h2 style="margin-top: 0;" align="center">Flutter MVC Question</h2>
+</p>
+
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">1. Explain the MVC (Model-View-Controller) architecture and its key components. How does it promote separation of concerns in a Flutter app?</h3>
+<h3 style="margin-top: 0;" align="start">2. How do you structure a Flutter project following the MVC pattern? Can you describe the role of each component in this architecture?</h3>
+<h3 style="margin-top: 0;" align="start">3. Discuss the advantages and limitations of using the MVC pattern in Flutter compared to other state management solutions like GetX, Provider, or Redux.</h3>
+<h3 style="margin-top: 0;" align="start">4. How do you implement data models in the MVC pattern? Can you provide an example of creating and using a data model in a Flutter application?</h3>
+<h3 style="margin-top: 0;" align="start">5. Explain the role of the "Controller" in the MVC pattern. How do you handle business logic and state management within the controller?</h3>
+<h3 style="margin-top: 0;" align="start">6. Describe the "View" in the MVC pattern. How do you design the user interface (UI) in a Flutter app following the MVC approach?</h3>
+<h3 style="margin-top: 0;" align="start">7. What strategies do you employ to maintain a clear separation between the Model, View, and Controller in a large-scale Flutter project?</h3>
+<h3 style="margin-top: 0;" align="start">8. How do you handle communication between the Model, View, and Controller in the MVC architecture? Are there any specific patterns or techniques you use?</h3>
+<h3 style="margin-top: 0;" align="start">9. Discuss the testing strategies for a Flutter app developed using the MVC pattern. How do you write unit tests and integration tests for each component?</h3>
+<h3 style="margin-top: 0;" align="start">10. How does the MVC pattern handle navigation and routing in a Flutter app? Describe how you implement navigation between different screens.</h3>
+<h3 style="margin-top: 0;" align="start">11. Explain how you manage state in the MVC pattern, especially when dealing with complex UI and asynchronous operations.</h3>
+<h3 style="margin-top: 0;" align="start">12. What are some common challenges you've faced while using the MVC pattern in Flutter, and how did you overcome them?</h3>
+<h3 style="margin-top: 0;" align="start">13. Can you explain the role of "Observers" or "Listeners" in the MVC pattern? How do they help in maintaining a reactive UI?</h3>
+<h3 style="margin-top: 0;" align="start">14. Describe your experience with maintaining and refactoring Flutter projects developed with the MVC pattern. How do you ensure code maintainability and readability?</h3>
+<h3 style="margin-top: 0;" align="start">15. How do you handle app state persistence in a Flutter app following the MVC pattern?</h3>
+<h3 style="margin-top: 0;" align="start">16. Have you used any additional packages or third-party libraries in conjunction with the MVC pattern in Flutter? How do they integrate into the architecture?</h3>
+<h3 style="margin-top: 0;" align="start">17. Describe your approach to handling authentication and authorization in a Flutter app developed using the MVC pattern.</h3>
+<h3 style="margin-top: 0;" align="start">18. How do you manage localization and internationalization in a Flutter app with the MVC architecture?</h3>
+<h3 style="margin-top: 0;" align="start">19. Can you discuss your experience with code sharing and code organization in a multi-platform Flutter project using the MVC pattern?/h3>
+<h3 style="margin-top: 0;" align="start">20. What considerations do you take into account when choosing between MVC and other state management patterns for a new Flutter project?</h3>
+</p>
+
 <br />
 <br />
 <br />
