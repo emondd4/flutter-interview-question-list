@@ -269,7 +269,7 @@
 <h3 style="margin-top: 0;" align="start">3. Explain the difference between Bluetooth Classic and Bluetooth Low Energy (BLE). When would you use one over the other?</h3>
 <h3 style="margin-top: 0;" align="start">4. Discuss the various Bluetooth roles, such as Central and Peripheral, and how they are utilized in a Flutter app.</h3>
 <h3 style="margin-top: 0;" align="start">5. Can you explain how to scan for nearby Bluetooth devices and establish a connection with them in a Flutter app?</h3>
-<h3 style="margin-top: 0;" align="start">6. CDescribe your approach to handling device pairing and security considerations when dealing with Bluetooth connections.</h3>
+<h3 style="margin-top: 0;" align="start">6. Describe your approach to handling device pairing and security considerations when dealing with Bluetooth connections.</h3>
 <h3 style="margin-top: 0;" align="start">7. How do you implement data exchange between Bluetooth devices in a Flutter app? Discuss the challenges and best practices.</h3>
 <h3 style="margin-top: 0;" align="start">8. Explain how you manage different Bluetooth profiles, such as Serial Port Profile (SPP) or Generic Attribute Profile (GATT), in a Flutter app</h3>
 <h3 style="margin-top: 0;" align="start">9. How do you handle disconnections, timeouts, and other error scenarios in Bluetooth communication?</h3>
@@ -284,4 +284,38 @@
 <h3 style="margin-top: 0;" align="start">18. Can you provide examples of using Bluetooth connectivity in conjunction with other Flutter packages or technologies, such as Bluetooth with Firebase?</h3>
 <h3 style="margin-top: 0;" align="start">19. Describe any performance optimization techniques you've used in a Flutter app that utilizes Bluetooth connectivity.</h3>
 <h3 style="margin-top: 0;" align="start">20. How do you handle backward compatibility and device-specific variations when implementing Bluetooth connectivity in a Flutter app?</h3>
+</p>
+
+
+
+<br />
+<br />
+<br />
+<br />
+<p align="center">
+<h2 style="margin-top: 0;" align="center">Flutter DIO/HTTP Question</h2>
+</p>
+
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">1. What are Dio and HTTP, and how do they differ as networking libraries in Flutter?</h3>
+<h3 style="margin-top: 0;" align="start">2. Explain the benefits of using Dio over the standard HTTP package for handling network requests in a Flutter app.</h3>
+<h3 style="margin-top: 0;" align="start">3. How do you integrate Dio or HTTP into a Flutter project? Describe the setup process and the necessary dependencies.</h3>
+<h3 style="margin-top: 0;" align="start">4. Discuss the different types of HTTP requests, such as GET, POST, PUT, DELETE, and how you handle them using Dio or HTTP.</h3>
+<h3 style="margin-top: 0;" align="start">5. Can you explain the differences between synchronous and asynchronous network requests, and when would you choose one over the other?</h3>
+<h3 style="margin-top: 0;" align="start">6. Describe how you handle error and exception handling in network requests with Dio or HTTP.</h3>
+<h3 style="margin-top: 0;" align="start">7. How do you implement data serialization and deserialization when sending or receiving complex data structures with Dio or HTTP?</h3>
+<h3 style="margin-top: 0;" align="start">8. Can you discuss the concept of interceptors in Dio and how they can be used to handle common tasks such as authentication or logging?</h3>
+<h3 style="margin-top: 0;" align="start">9. Explain your preferred approach to handling request and response headers, such as authentication tokens or content types.</h3>
+<h3 style="margin-top: 0;" align="start">10. Discuss any strategies you employ to optimize network performance and reduce latency when working with Dio or HTTP.</h3>
+<h3 style="margin-top: 0;" align="start">11. Describe your experience with handling file uploads and downloads using Dio or HTTP in a Flutter app.</h3>
+<h3 style="margin-top: 0;" align="start">12. How do you manage network connectivity issues and handle offline scenarios with Dio or HTTP?</h3>
+<h3 style="margin-top: 0;" align="start">13. Can you explain how you perform concurrent or parallel network requests in a Flutter app using Dio or HTTP?</h3>
+<h3 style="margin-top: 0;" align="start">14. Discuss any security considerations you take into account when making network requests, such as SSL or secure communication.</h3>
+<h3 style="margin-top: 0;" align="start">15. Describe your experience with testing Flutter apps that utilize Dio or HTTP for network communication. How do you write unit tests and integration tests involving network requests?</h3>
+<h3 style="margin-top: 0;" align="start">16. How do you handle data pagination and data caching in a Flutter app when working with Dio or HTTP?</h3>
+<h3 style="margin-top: 0;" align="start">17. Explain any challenges you've encountered while using Dio or HTTP in production apps and how you resolved them.</h3>
+<h3 style="margin-top: 0;" align="start">18. Describe your preferred approach to structuring and organizing code related to network requests in a Flutter app.</h3>
+<h3 style="margin-top: 0;" align="start">19. Have you integrated Dio or HTTP with other state management solutions in Flutter, such as Provider or BLoC? How do they complement each other?</h3>
+<h3 style="margin-top: 0;" align="start">20. Can you provide examples of using Dio or HTTP in conjunction with other Flutter packages or technologies, such as Dio with Firebase or HTTP with GraphQL?</h3>
 </p>
