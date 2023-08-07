@@ -31,6 +31,39 @@
 <br />
 <br />
 <p align="center">
+<h2 style="margin-top: 0;" align="center">Flutter Basic OS Level Question</h2>
+</p>
+
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">1. Explain how you can access platform-specific functionality using Flutter's Platform Channels. Provide an example of how you would implement a platform-specific feature in Android and iOS.</h3>
+<h3 style="margin-top: 0;" align="start">2. Describe the process of handling device permissions in a Flutter app for both Android and iOS. How do you request and check for permissions?</h3>
+<h3 style="margin-top: 0;" align="start">3. How do you detect the current platform (Android or iOS) programmatically in Flutter? Can you provide a code snippet to demonstrate this?</h3>
+<h3 style="margin-top: 0;" align="start">4. Discuss the differences between handling background tasks in Android and iOS in a Flutter app. How would you implement background processing for both platforms?</h3>
+<h3 style="margin-top: 0;" align="start">5. Explain how you can interact with native APIs, such as accessing the device's camera or reading sensor data, using platform-specific code in Flutter.</h3>
+<h3 style="margin-top: 0;" align="start">6. How do you handle deep linking and universal links in a Flutter app for both Android and iOS? Describe the steps to handle incoming links.</h3>
+<h3 style="margin-top: 0;" align="start">7. Can you explain how to handle push notifications in a Flutter app for both Android and iOS? How do you use Firebase Cloud Messaging (FCM) or Apple Push Notification Service (APNs)?</h3>
+<h3 style="margin-top: 0;" align="start">8. Discuss your approach to handling different screen sizes and resolutions in a Flutter app for various Android and iOS devices.</h3>
+<h3 style="margin-top: 0;" align="start">9. Explain how Flutter manages the app lifecycle and how you can respond to different lifecycle events in Android and iOS.</h3>
+<h3 style="margin-top: 0;" align="start">10. How do you implement app localization and support multiple languages for both Android and iOS in a Flutter app?</h3>
+<h3 style="margin-top: 0;" align="start">11. Describe the process of handling in-app purchases or subscriptions in a Flutter app for both Android and iOS.</h3>
+<h3 style="margin-top: 0;" align="start">12. How do you access device-specific information, such as device name, model, and operating system version, using Flutter's platform-specific APIs?</h3>
+<h3 style="margin-top: 0;" align="start">13. Can you discuss the steps to package and deploy a Flutter app to both the Google Play Store and the Apple App Store?</h3>
+<h3 style="margin-top: 0;" align="start">14. Explain how to interact with native plugins in Flutter to leverage native capabilities and features of the device.</h3>
+<h3 style="margin-top: 0;" align="start">15. How do you handle device orientation changes and provide different layouts for portrait and landscape modes in a Flutter app?</h3>
+<h3 style="margin-top: 0;" align="start">16. Describe any performance considerations you take into account when developing for different Android and iOS devices.</h3>
+<h3 style="margin-top: 0;" align="start">17. Discuss any security measures you implement in a Flutter app to protect sensitive user data on both Android and iOS platforms.</h3>
+<h3 style="margin-top: 0;" align="start">18. How do you handle interactions with the device's battery and power management in a Flutter app?</h3>
+<h3 style="margin-top: 0;" align="start">19. Explain your preferred approach to logging and debugging Flutter apps on both Android and iOS platforms.</h3>
+<h3 style="margin-top: 0;" align="start">20. Can you provide real-world examples of how you've utilized Flutter's platform-specific APIs to solve specific OS-level challenges in your Flutter projects?</h3>
+</p>
+
+
+<br />
+<br />
+<br />
+<br />
+<p align="center">
 <h2 style="margin-top: 0;" align="center">Flutter MVC Question</h2>
 </p>
 
@@ -54,7 +87,7 @@
 <h3 style="margin-top: 0;" align="start">16. Have you used any additional packages or third-party libraries in conjunction with the MVC pattern in Flutter? How do they integrate into the architecture?</h3>
 <h3 style="margin-top: 0;" align="start">17. Describe your approach to handling authentication and authorization in a Flutter app developed using the MVC pattern.</h3>
 <h3 style="margin-top: 0;" align="start">18. How do you manage localization and internationalization in a Flutter app with the MVC architecture?</h3>
-<h3 style="margin-top: 0;" align="start">19. Can you discuss your experience with code sharing and code organization in a multi-platform Flutter project using the MVC pattern<?/h3>
+<h3 style="margin-top: 0;" align="start">19. Can you discuss your experience with code sharing and code organization in a multi-platform Flutter project using the MVC pattern?</h3>
 <h3 style="margin-top: 0;" align="start">20. What considerations do you take into account when choosing between MVC and other state management patterns for a new Flutter project?</h3>
 </p>
 
