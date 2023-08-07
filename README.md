@@ -352,3 +352,36 @@
 <h3 style="margin-top: 0;" align="start">19. Have you integrated Dio or HTTP with other state management solutions in Flutter, such as Provider or BLoC? How do they complement each other?</h3>
 <h3 style="margin-top: 0;" align="start">20. Can you provide examples of using Dio or HTTP in conjunction with other Flutter packages or technologies, such as Dio with Firebase or HTTP with GraphQL?</h3>
 </p>
+
+
+<br />
+<br />
+<br />
+<br />
+<p align="center">
+<h2 style="margin-top: 0;" align="center">Git Question</h2>
+</p>
+
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">1. Explain the importance of using version control, particularly Git, in collaborative Flutter app development.</h3>
+<h3 style="margin-top: 0;" align="start">2. Describe the basic Git workflow you follow when starting a new Flutter project or contributing to an existing one.</h3>
+<h3 style="margin-top: 0;" align="start">3. How do you create a new branch in Git for a specific feature or bug fix in a Flutter project? What naming conventions do you use for branches?</h3>
+<h3 style="margin-top: 0;" align="start">4. Discuss your approach to handling merge conflicts in Git, especially when working on a team where multiple developers are modifying the same codebase.</h3>
+<h3 style="margin-top: 0;" align="start">5. How do you use Git tags in a Flutter project to mark significant releases or milestones?</h3>
+<h3 style="margin-top: 0;" align="start">6. Describe the process of submitting a pull request for review in a Flutter project. What factors do you consider when reviewing others' pull requests?</h3>
+<h3 style="margin-top: 0;" align="start">7. How do you handle Git submodules or dependencies in a Flutter project, especially when using external packages or libraries?</h3>
+<h3 style="margin-top: 0;" align="start">8. Can you explain the difference between Git rebase and merge? When and why would you choose one over the other?</h3>
+<h3 style="margin-top: 0;" align="start">9. Discuss any branching strategies you've employed in Flutter projects to ensure code stability and efficient collaboration.</h3>
+<h3 style="margin-top: 0;" align="start">10. How do you manage versioning and tagging of your Flutter app releases using Git?</h3>
+<h3 style="margin-top: 0;" align="start">11. Describe your preferred Git workflow for managing project documentation or assets in a Flutter app.</h3>
+<h3 style="margin-top: 0;" align="start">12. Explain your approach to maintaining a clean commit history in a Flutter project and writing informative commit messages.</h3>
+<h3 style="margin-top: 0;" align="start">13. How do you handle security considerations in version control, such as avoiding the inclusion of sensitive information in repositories?</h3>
+<h3 style="margin-top: 0;" align="start">14. Describe your strategies for optimizing Git performance and handling large binary files or assets in a Flutter project.</h3>
+<h3 style="margin-top: 0;" align="start">15. How do you handle long-lived feature branches or experimental changes in a Flutter project?</h3>
+<h3 style="margin-top: 0;" align="start">16. Discuss your experience with using Git hooks to automate tasks or enforce code quality standards in a Flutter project.</h3>
+<h3 style="margin-top: 0;" align="start">17. Can you explain any challenges you've encountered when using Git in distributed or remote Flutter development teams, and how you addressed them?</h3>
+<h3 style="margin-top: 0;" align="start">18. Describe your preferred Git branching model for a Flutter project and how you manage the release process.</h3>
+<h3 style="margin-top: 0;" align="start">19. How do you ensure that all team members follow Git best practices and maintain consistency in the codebase?</h3>
+<h3 style="margin-top: 0;" align="start">20. Discuss your experience with using Git in conjunction with other tools or technologies commonly used in Flutter development, such as CI/CD systems or issue tracking software.</h3>
+</p>
