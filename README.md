@@ -229,26 +229,106 @@ Use Flutter's Built-in Tools: Flutter provides the intl package for internationa
 
 
 <p align="start">
-<h3 style="margin-top: 0;" align="start">1. Explain how you can access platform-specific functionality using Flutter's Platform Channels. Provide an example of how you would implement a platform-specific feature in Android and iOS.</h3>
-<h3 style="margin-top: 0;" align="start">2. Describe the process of handling device permissions in a Flutter app for both Android and iOS. How do you request and check for permissions?</h3>
-<h3 style="margin-top: 0;" align="start">3. How do you detect the current platform (Android or iOS) programmatically in Flutter? Can you provide a code snippet to demonstrate this?</h3>
-<h3 style="margin-top: 0;" align="start">4. Discuss the differences between handling background tasks in Android and iOS in a Flutter app. How would you implement background processing for both platforms?</h3>
-<h3 style="margin-top: 0;" align="start">5. Explain how you can interact with native APIs, such as accessing the device's camera or reading sensor data, using platform-specific code in Flutter.</h3>
-<h3 style="margin-top: 0;" align="start">6. How do you handle deep linking and universal links in a Flutter app for both Android and iOS? Describe the steps to handle incoming links.</h3>
-<h3 style="margin-top: 0;" align="start">7. Can you explain how to handle push notifications in a Flutter app for both Android and iOS? How do you use Firebase Cloud Messaging (FCM) or Apple Push Notification Service (APNs)?</h3>
-<h3 style="margin-top: 0;" align="start">8. Discuss your approach to handling different screen sizes and resolutions in a Flutter app for various Android and iOS devices.</h3>
-<h3 style="margin-top: 0;" align="start">9. Explain how Flutter manages the app lifecycle and how you can respond to different lifecycle events in Android and iOS.</h3>
-<h3 style="margin-top: 0;" align="start">10. How do you implement app localization and support multiple languages for both Android and iOS in a Flutter app?</h3>
-<h3 style="margin-top: 0;" align="start">11. Describe the process of handling in-app purchases or subscriptions in a Flutter app for both Android and iOS.</h3>
-<h3 style="margin-top: 0;" align="start">12. How do you access device-specific information, such as device name, model, and operating system version, using Flutter's platform-specific APIs?</h3>
-<h3 style="margin-top: 0;" align="start">13. Can you discuss the steps to package and deploy a Flutter app to both the Google Play Store and the Apple App Store?</h3>
-<h3 style="margin-top: 0;" align="start">14. Explain how to interact with native plugins in Flutter to leverage native capabilities and features of the device.</h3>
-<h3 style="margin-top: 0;" align="start">15. How do you handle device orientation changes and provide different layouts for portrait and landscape modes in a Flutter app?</h3>
-<h3 style="margin-top: 0;" align="start">16. Describe any performance considerations you take into account when developing for different Android and iOS devices.</h3>
-<h3 style="margin-top: 0;" align="start">17. Discuss any security measures you implement in a Flutter app to protect sensitive user data on both Android and iOS platforms.</h3>
-<h3 style="margin-top: 0;" align="start">18. How do you handle interactions with the device's battery and power management in a Flutter app?</h3>
-<h3 style="margin-top: 0;" align="start">19. Explain your preferred approach to logging and debugging Flutter apps on both Android and iOS platforms.</h3>
-<h3 style="margin-top: 0;" align="start">20. Can you provide real-world examples of how you've utilized Flutter's platform-specific APIs to solve specific OS-level challenges in your Flutter projects?</h3>
+<h3 style="margin-top: 0;" align="start">1. Explain how Flutter manages the app lifecycle and how you can respond to different lifecycle events in Android and iOS.</h3>
+
+<br/>
+
+**Flutter App Lifecycle Events:**
+
+**onCreate:** This event occurs when your app is first launched. It's where you typically perform one-time setup tasks, such as initializing services or setting up global state.
+
+**onResume:** Triggered when the app comes to the foreground from a paused or inactive state. You can use this event to resume animations, reload data, or update the UI.
+
+**onPause: ** Fired when the app goes into the background or loses focus. You can use this event to pause animations, save state, or release resources.
+
+**onInactive:** Occurs on iOS when the app is in a transitioning state between active and background states. You can use this event for temporary tasks like saving state.
+
+**onDetached:** On Android, this event is called when the app is removed from recent apps. On iOS, it's similar to onInactive.
+
+**onStop:** Triggered when the app is no longer visible and may be removed from memory. You can use this event to perform final cleanup and save important data.
+
+```
+ @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    switch (state) {
+      case AppLifecycleState.resumed:
+        // App is in the foreground
+        break;
+      case AppLifecycleState.inactive:
+        // App is in an inactive state
+        break;
+      case AppLifecycleState.paused:
+        // App is in the background
+        break;
+      case AppLifecycleState.detached:
+        // App is detached (Android only)
+        break;
+    }
+  }
+```
+
+<br/>
+  
+<h3 style="margin-top: 0;" align="start">2. Describe the process of handling in-app purchases or subscriptions in a Flutter app for both Android and iOS.</h3>
+
+<h3 style="margin-top: 0;" align="start">3. How do you access device-specific information, such as device name, model, and operating system version, using Flutter's platform-specific APIs?</h3>
+
+<br/>
+
+**1. Define a Platform Channel:**
+
+In your Flutter Dart code, define a platform channel using the `MethodChannel` class. This channel will act as a bridge to communicate with native code:
+
+```
+import 'package:flutter/services.dart';
+
+class DeviceInfo {
+  static const MethodChannel _channel = MethodChannel('com.example/device_info');
+
+  static Future<Map<String, dynamic>> getDeviceInfo() async {
+    return await _channel.invokeMethod('getDeviceInfo');
+  }
+}
+```
+<br/>
+
+2. Implement Native Code:
+
+In your native code (Java/Kotlin for Android, Objective-C/Swift for iOS), implement the method that will be invoked from your Flutter app using the platform channel. Retrieve the desired device information and return it to your Flutter app:
+
+```
+public class MainActivity extends FlutterActivity {
+  private static final String CHANNEL = "com.example/device_info";
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    GeneratedPluginRegistrant.registerWith(this);
+
+    new MethodChannel(getFlutterEngine().getDartExecutor().getBinaryMessenger(), CHANNEL)
+        .setMethodCallHandler((call, result) -> {
+          if (call.method.equals("getDeviceInfo")) {
+            Map<String, String> deviceInfo = getDeviceInformation();
+            result.success(deviceInfo);
+          } else {
+            result.notImplemented();
+          }
+        });
+  }
+
+  private Map<String, String> getDeviceInformation() {
+    Map<String, String> deviceInfo = new HashMap<>();
+    deviceInfo.put("deviceName", Build.DEVICE);
+    deviceInfo.put("deviceModel", Build.MODEL);
+    deviceInfo.put("osVersion", Build.VERSION.RELEASE);
+    // Add more information if needed
+    return deviceInfo;
+  }
+}
+```
+
+<br/>
+
 </p>
 
 
