@@ -343,25 +343,65 @@ public class MainActivity extends FlutterActivity {
 
 <p align="start">
 <h3 style="margin-top: 0;" align="start">1. Explain the MVC (Model-View-Controller) architecture and its key components. How does it promote separation of concerns in a Flutter app?</h3>
-<h3 style="margin-top: 0;" align="start">2. How do you structure a Flutter project following the MVC pattern? Can you describe the role of each component in this architecture?</h3>
-<h3 style="margin-top: 0;" align="start">3. Discuss the advantages and limitations of using the MVC pattern in Flutter compared to other state management solutions like GetX, Provider, or Redux.</h3>
-<h3 style="margin-top: 0;" align="start">4. How do you implement data models in the MVC pattern? Can you provide an example of creating and using a data model in a Flutter application?</h3>
-<h3 style="margin-top: 0;" align="start">5. Explain the role of the "Controller" in the MVC pattern. How do you handle business logic and state management within the controller?</h3>
-<h3 style="margin-top: 0;" align="start">6. Describe the "View" in the MVC pattern. How do you design the user interface (UI) in a Flutter app following the MVC approach?</h3>
-<h3 style="margin-top: 0;" align="start">7. What strategies do you employ to maintain a clear separation between the Model, View, and Controller in a large-scale Flutter project?</h3>
-<h3 style="margin-top: 0;" align="start">8. How do you handle communication between the Model, View, and Controller in the MVC architecture? Are there any specific patterns or techniques you use?</h3>
-<h3 style="margin-top: 0;" align="start">9. Discuss the testing strategies for a Flutter app developed using the MVC pattern. How do you write unit tests and integration tests for each component?</h3>
-<h3 style="margin-top: 0;" align="start">10. How does the MVC pattern handle navigation and routing in a Flutter app? Describe how you implement navigation between different screens.</h3>
-<h3 style="margin-top: 0;" align="start">11. Explain how you manage state in the MVC pattern, especially when dealing with complex UI and asynchronous operations.</h3>
-<h3 style="margin-top: 0;" align="start">12. What are some common challenges you've faced while using the MVC pattern in Flutter, and how did you overcome them?</h3>
-<h3 style="margin-top: 0;" align="start">13. Can you explain the role of "Observers" or "Listeners" in the MVC pattern? How do they help in maintaining a reactive UI?</h3>
-<h3 style="margin-top: 0;" align="start">14. Describe your experience with maintaining and refactoring Flutter projects developed with the MVC pattern. How do you ensure code maintainability and readability?</h3>
-<h3 style="margin-top: 0;" align="start">15. How do you handle app state persistence in a Flutter app following the MVC pattern?</h3>
-<h3 style="margin-top: 0;" align="start">16. Have you used any additional packages or third-party libraries in conjunction with the MVC pattern in Flutter? How do they integrate into the architecture?</h3>
-<h3 style="margin-top: 0;" align="start">17. Describe your approach to handling authentication and authorization in a Flutter app developed using the MVC pattern.</h3>
-<h3 style="margin-top: 0;" align="start">18. How do you manage localization and internationalization in a Flutter app with the MVC architecture?</h3>
-<h3 style="margin-top: 0;" align="start">19. Can you discuss your experience with code sharing and code organization in a multi-platform Flutter project using the MVC pattern?</h3>
-<h3 style="margin-top: 0;" align="start">20. What considerations do you take into account when choosing between MVC and other state management patterns for a new Flutter project?</h3>
+
+<br/>
+
+In the context of a Flutter app, the MVC architecture can be implemented as follows:
+
+**Model:** In Flutter, the Model corresponds to the data classes and business logic. This includes the data structures that represent the application's state, as well as any functions that manipulate or process that data.
+
+**View:** The View in Flutter is represented by the UI components, widgets, and layouts that users interact with. This includes everything the user sees on the screen, such as buttons, text fields, images, and more.
+
+**Controller:** In Flutter, the Controller is typically represented by the combination of widgets and classes that manage the application's logic and handle user interactions. This includes event handlers, state management, and other logic that connects the Model and the View.
+
+<br/>
+  
+<h3 style="margin-top: 0;" align="start">3. Discuss the advantages and limitations of using the MVC pattern in Flutter</h3>
+
+<br/>
+
+**Advantages of Using MVC in Flutter:**
+**Simplicity and Familiarity:** MVC is a well-known pattern that many developers are familiar with. If your team is experienced with MVC from other contexts, transitioning to using it in Flutter might be relatively straightforward.
+
+**Flexibility:** MVC is relatively flexible and can be customized to fit your project's specific needs. You have control over how you structure your Model, View, and Controller components.
+
+**Clear Separation of Concerns:** MVC enforces a clear separation between data, UI, and user interactions. This separation can lead to a more organized and maintainable codebase.
+
+<br/>
+
+**Limitations of Using MVC in Flutter:**
+
+**Limited State Management:** MVC lacks built-in state management mechanisms. While Flutter's widget tree naturally separates the UI, managing application state effectively requires additional libraries or custom solutions.
+
+**Complexity as App Grows:** As your Flutter app becomes more complex, managing state and interactions solely through the Controller can lead to spaghetti code and difficulties in maintaining a clear flow of data.
+
+**Manual Boilerplate:** In MVC, you might need to write a lot of boilerplate code to manage the communication between Model, View, and Controller components, especially when handling state changes.
+
+<br/>
+
+<h3 style="margin-top: 0;" align="start">4. Key Difference Between MVP and MVC in Flutter</h3>
+
+<br/>
+
+**Responsibilities of View:**
+
+* In MVC, the View is passive and only displays data. The Controller handles user interactions.
+* In MVP, the View can have more logic related to UI behavior, and the Presenter handles the majority of interaction handling.
+  
+**Role of Controller vs. Presenter:**
+
+* In MVC, the Controller primarily focuses on handling user input and coordinating the flow of data.
+* In MVP, the Presenter includes UI logic and actively communicates with the View.
+  
+**Interaction Flow:**
+
+* In MVC, the Controller updates the Model and the View separately.
+* In MVP, the Presenter acts as a mediator between the Model and the View, handling updates and interactions.
+  
+`In general, MVP can be seen as an evolution of the MVC pattern, where the Presenter takes on more responsibility for UI logic, making the View more lightweight and easier to test. Both patterns aim to promote separation of concerns and maintainable code, but the choice between them depends on factors like the complexity of the application, the framework you're working with, and your team's preferences and expertise.`
+
+<br/>
+
 </p>
 
 <br />
