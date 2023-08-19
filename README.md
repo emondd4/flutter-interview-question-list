@@ -237,7 +237,7 @@ When you create an animation using `AnimationController`, you need to provide a 
 <br/>
 
 <p align="start">
-<h3 style="margin-top: 0;" align="start">7. Define JWT Token and Refresh Token and Their Implementation with Getx and BLoC.</h3>
+<h3 style="margin-top: 0;" align="start">8. Define JWT Token and Refresh Token and Their Implementation with Getx and BLoC.</h3>
 
 **1. JSON Web Tokens (JWTs):**
 
@@ -267,7 +267,7 @@ Refresh tokens are used to obtain new access tokens without requiring the user t
 
 **Implementation Using GetX:**
 
-* **Token Storage:**
+*  **Token Storage:**
 Use a package like shared_preferences to securely store the access token and refresh token on the device.
 
 *  **AuthController:**
@@ -300,6 +300,90 @@ Implement token refresh logic in the AuthBloc using the refresh token. If the re
 
 *  **UI and Navigation:**
 Build your UI with BLoC and state management. Use BlocBuilder to listen to the AuthBloc state and show different screens or widgets based on the authentication state.
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">9. Example Of Flutter Deep Linking</h3>
+
+**Add Dependencies:**
+In your pubspec.yaml file, add the uni_links package to your dependencies:
+```
+dependencies:
+  flutter:
+    sdk: flutter
+  uni_links: ^0.5.0
+```
+**Implement Deep Linking:**
+Here's a basic example of how to handle deep linking using the `uni_links` package:
+```
+import 'package:flutter/material.dart';
+import 'package:uni_links/uni_links.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Deep Linking Example',
+      home: HomeScreen(),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Home')),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () async {
+            final deepLink = 'myapp://details';
+            if (await canLaunch(deepLink)) {
+              await launch(deepLink);
+            }
+          },
+          child: Text('Open Details Screen'),
+        ),
+      ),
+    );
+  }
+}
+
+class DetailsScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Details')),
+      body: Center(child: Text('Details Screen')),
+    );
+  }
+}
+
+class DeepLinkHandler {
+  static void handleLink(Uri uri) {
+    if (uri.path == '/details') {
+      runApp(MaterialApp(home: DetailsScreen()));
+    }
+  }
+}
+
+void initUniLinks() async {
+  try {
+    final initialLink = await getInitialLink();
+    DeepLinkHandler.handleLink(initialLink);
+  } on FormatException {
+    // Handle exception if the link is not well-formatted
+  }
+}
+```
+
+In this example, when the user clicks the "Open Details Screen" button in the `HomeScreen`, the app will attempt to open the `myapp://details` deep link using the `uni_links` package. If you have a registered deep link with that scheme `(myapp://details)`, the app will navigate to the `DetailsScreen`.
+
   
 </p>
 
