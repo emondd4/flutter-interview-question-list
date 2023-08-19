@@ -216,6 +216,91 @@ Use Flutter's Built-in Tools: Flutter provides the intl package for internationa
 
 <br/>
 
+<p align="start">
+<h3 style="margin-top: 0;" align="start">6. What is MediaQuery in flutter?</h3>
+
+In Flutter, `MediaQuery` is a class that provides access to various information about the current device's screen and layout characteristics. It allows you to retrieve information such as screen dimensions, device orientation, and more. This information is crucial for building responsive and adaptable user interfaces that work well across different devices and screen sizes.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">7. Define SignleTickerProviderStateMixin</h3>
+
+`SingleTickerProviderStateMixin` is a `mixin` class provided by the Flutter framework that's used to manage animations with a single `Ticker`.
+
+In Flutter, animations are managed using the `AnimationController` class, which drives the animation over time. The `Ticker` is responsible for ticking the animation at a certain rate, usually tied to the frame rate of the device's display.
+
+When you create an animation using `AnimationController`, you need to provide a vsync parameter which is typically an instance of a class that implements the `TickerProvider` interface. This interface is responsible for syncing the animation with the device's refresh rate, ensuring smooth animations and efficient resource usage.
+
+`SingleTickerProviderStateMixin` is a convenience mixin class that simplifies this process when you only need a single `AnimationController` in your widget. It allows you to avoid creating a separate class that implements `TickerProvider` and instead use the mixin directly in your widget's state class.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">7. Define JWT Token and Refresh Token and Their Implementation with Getx and BLoC.</h3>
+
+**1. JSON Web Tokens (JWTs):**
+
+A JWT is a compact, URL-safe means of representing claims (usually, information about a user) as a JSON object that is digitally signed. JWTs consist of three parts separated by dots: Header, Payload, and Signature.
+
+  * **Header:** Contains information about the type of token and the signing algorithm used.
+  * **Payload:** Contains claims or statements about an entity (typically, the user) and additional data.
+  * **Signature:** Is created using the header, payload, and a secret key. It ensures the integrity of the token and allows verification of its source.
+
+`When a user logs in, the server generates a JWT and returns it to the client. The client includes the JWT in the headers of subsequent requests to the server. The server then validates the token by checking the signature and the expiration date. If the signature is valid and the token is not expired, the server allows the user to access protected resources.`
+
+<br/>
+
+**2. Refresh Tokens:**
+
+Refresh tokens are used to obtain new access tokens without requiring the user to log in again. They are typically long-lived compared to access tokens. Here's how the process works:
+
+  * The user logs in, and the server provides both an access token and a refresh token.
+  * The access token has a short expiration time, usually around 15-60 minutes. When it expires, the user would need to log in again unless a refresh token is used.
+  * When the access token expires, the client can send the refresh token to the server.
+  * The server checks if the refresh token is valid and hasn't expired. If so, it generates a new access token and returns it to the client.
+  * The client continues using the new access token to access protected resources.
+
+`Refresh tokens provide enhanced security because they can be more easily revoked than access tokens. If a user logs out or the account is compromised, the refresh token can be invalidated, forcing the user to log in again and preventing unauthorized access.`
+
+<br/>
+
+**Implementation Using GetX:**
+
+* **Token Storage:**
+Use a package like shared_preferences to securely store the access token and refresh token on the device.
+
+*  **AuthController:**
+Create an AuthController in GetX that manages the authentication state and token handling. It can contain methods for login, logout, token refresh, and checking token validity.
+
+*  **API Calls:**
+Interceptor or Middleware: Use the dio package with GetX's routing to attach an interceptor that checks for token expiration. If the access token is expired, call the token refresh method.
+
+*  **Token Refresh:**
+Implement token refresh logic in the AuthController using the refresh token. If the refresh token is valid, request a new access token and update it in storage.
+
+*  **UI and Navigation:**
+Build your UI with GetX's reactive state management. You can show different screens or widgets based on the authentication state managed by the AuthController.
+
+<br/>
+
+**Implementation Using BLoC:**
+
+* **Token Storage:
+Use a package like shared_preferences or Hive to securely store the access token and refresh token on the device.
+
+* **AuthBloc:**
+Create an AuthBloc that manages the authentication state and token handling. It can have events like LoginEvent, LogoutEvent, RefreshTokenEvent, etc.
+
+* **API Calls:**
+Intercepting Middleware: Use the dio package with BLoC to implement an interceptor that checks for token expiration. If the access token is expired, dispatch a RefreshTokenEvent.
+
+*  **Token Refresh:**
+Implement token refresh logic in the AuthBloc using the refresh token. If the refresh token is valid, request a new access token and dispatch an event to update the state.
+
+*  **UI and Navigation:**
+Build your UI with BLoC and state management. Use BlocBuilder to listen to the AuthBloc state and show different screens or widgets based on the authentication state.
+  
 </p>
 
 
