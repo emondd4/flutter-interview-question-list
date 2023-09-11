@@ -390,6 +390,131 @@ In this example, when the user clicks the "Open Details Screen" button in the `H
   
 </p>
 
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">10. What is flutter?</h3>
+
+Flutter is a open source UI toolkit from google to develop mobile, desktop and web application by using dart programming language.
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">11. What is App State?</h3>
+
+In Flutter, "app state" refers to the data and information that define the current state of an application. This includes variables, settings, and other relevant data that determine how the app behaves and what is displayed on the screen.
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">12. What is the difference between main() and runApp() functions in flutter?</h3>
+
+* `main` : where a program starts, without it you cant run an program.
+* `runApp` : it retuns a widget that would be attached to the screen as a root of the widget tree. 
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">13. Differentiate between Hot Restart and Hot Reload</h3>
+
+`Hot Reload:`
+
+* Hot Reload preserves the app's state.
+* It updates the code in the running app while keeping the app's state intact.
+* It's faster for making UI changes during development.
+* Use it for iterative UI adjustments and bug fixes.
+
+<br/>
+
+`Hot Restart:`
+
+* Hot Restart resets the app's state.
+* It restarts the entire app, including rebuilding the widget tree.
+* It's useful for changes that affect app initialization.
+* Use it when you need to apply structural code changes or add new dependencies.
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">14. How do you execute code only in debug mode?</h3>
+
+You can conditionally execute code only in debug mode in Flutter using the assert statement.
+
+```
+assert(() {
+    // Your debug-only code here
+    print("This code runs only in debug mode");
+    return true; // Always return true in debug mode
+  }());
+```
+
+You can also use `kReleaseMode`.
+
+```
+if(Foundation.kReleaseMode){
+  print("Release Mode");
+}else{
+  print("Debug Mode");
+}
+```
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">15. Explain async and await in dart. </h3>
+
+In Flutter, async and await are used to work with asynchronous operations in a more sequential and readable manner:
+
+* async: It is used as a modifier before a function or method declaration. It signifies that the function contains asynchronous code and can pause execution to wait for asynchronous tasks to complete without blocking the entire program.
+
+* await: It is used inside an async function to pause execution until the awaited asynchronous operation is complete. It ensures that the code below it runs only when the awaited task finishes.
+
+Together, async and await simplify asynchronous programming, making it easier to work with tasks like network requests, file I/O, and animations without complicating the code's structure.
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">16. Explain Stateful and Stateless widget lifecycle in flutter.</h3>
+
+In Flutter, both stateful and stateless widgets have lifecycles that define how they are created and updated during the app's runtime. Here's an explanation of the lifecycle for each type:
+
+`Stateless Widget Lifecycle:`
+
+1. Construction (Build): A stateless widget is constructed when it is inserted into the widget tree, typically during the build phase. The build method is called, and the widget returns a new widget tree based on its configuration.
+
+2. Initialization: Stateless widgets do not have an initState method, and they are considered immutable. They do not hold mutable state.
+
+3. Rendering: The widget is rendered based on the output of the build method. It can receive data via its constructor and display it but cannot change its internal state. Stateless widgets are rebuilt when the parent widget is rebuilt or when they receive new data.
+
+4. Destruction: Stateless widgets do not have a specific destruction phase, as they are not intended to hold mutable state.
+
+<br/>
+
+`Stateful Widget Lifecycle:`
+
+1. Construction (Create): A stateful widget is constructed when it is first inserted into the widget tree, during the build phase. The createState method is called, creating an associated mutable state object of the widget.
+
+2. Initialization (initState): The initState method is called on the state object, allowing you to perform one-time initialization tasks, such as setting up controllers or listeners. It's called immediately after the state object is created.
+
+3. Rendering (Build): The build method is called, and the widget tree is constructed based on the current state. The widget can rebuild multiple times during its lifecycle, typically when its state changes or when it is marked as needing a rebuild.
+
+4. Updating State (setState): When you need to update the state of a stateful widget, you call the setState method, which triggers a rebuild of the widget. This is where you can modify mutable state variables.
+
+5. Destruction (dispose): If the stateful widget is removed from the widget tree (e.g., when the parent widget is removed), the dispose method is called. This is where you should release any resources, such as closing streams or controllers.
+  
+</p>
 
 <br />
 <br />
