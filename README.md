@@ -516,6 +516,170 @@ In Flutter, both stateful and stateless widgets have lifecycles that define how 
   
 </p>
 
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">17. What is pubspec.yalm in flutter and what does it do?</h3>
+
+Flutter is a open source UI toolkit from google to develop mobile, desktop and web application by using dart programming language.
+
+The `pubspec.yaml` file in Flutter is a configuration file that manages project dependencies, specifies metadata, and defines assets. It's used to:
+
+* List and manage package dependencies.
+* Provide project metadata (name, version, description).
+* Define assets (images, fonts, etc.).
+* Configure environment settings.
+* Define custom scripts and tools.
+* Prepare your project for publishing on pub.dev, the Dart package repository.
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">18. When should someone use WidgetsBindingObserver in flutter?</h3>
+
+`WidgetsBindingObserver` in Flutter is an interface that allows you to listen for lifecycle events related to the application's WidgetsBinding, which manages the framework's interaction with the operating system. You should use WidgetsBindingObserver when you need to respond to changes in the application's lifecycle, including when the app is paused, resumed, or inactive.
+
+1. Handling App Lifecycle Events.
+2. Managing Resources.
+3. Cleaning Up Resources.
+4. Custom Navigation and Routing.
+
+`Example:`
+```
+import 'package:flutter/widgets.dart';
+
+class MyAppLifecycleObserver with WidgetsBindingObserver {
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused) {
+      // App is in the background, perform actions like releasing resources.
+    } else if (state == AppLifecycleState.resumed) {
+      // App is in the foreground, perform actions like resuming services.
+    }
+  }
+}
+
+class MyWidget extends StatefulWidget {
+  @override
+  _MyWidgetState createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<MyWidget> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance?.addObserver(MyAppLifecycleObserver());
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance?.removeObserver(MyAppLifecycleObserver());
+    super.dispose();
+  }
+
+  // Widget build method and other widget-related code here...
+}
+
+```
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">19. What is Fat Arrow Notation in Flutter?</h3>
+
+In Flutter and Dart, the fat arrow notation `(=>)` is used as a concise way to define functions, especially for functions that have a single expression.
+`Here's the basic structure of a function using fat arrow notation:`
+```
+returnType functionName(parameters) => expression;
+```
+* returnType: The data type that the function returns. It can be omitted for functions that return dynamic or when Dart can infer the return type.
+* functionName: The name of the function.
+* parameters: The function's parameters enclosed in parentheses.
+* expression: The expression that computes the return value. It's followed by the fat arrow `(=>)`.
+
+`Example:`
+```
+// A function that adds two numbers
+int add(int a, int b) => a + b;
+
+// A function that returns a greeting message
+String greet(String name) => 'Hello, $name!';
+
+// A function with no parameters that returns the current time
+DateTime getCurrentTime() => DateTime.now();
+```
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">20. Differenciate Between Scaffold and Container.</h3>
+
+`Scaffold` is a higher-level widget used to create the basic structure of a screen, including app bars, drawers, and floating action buttons. It provides a ready-made layout for common app structures.
+
+`Container` is a lower-level widget used for layout and styling purposes. It's often used to wrap other widgets and control their alignment, padding, margin, and decoration.
+
+In short, Scaffold provides a complete screen structure, while Container is used for customizing and styling individual widgets within a screen.
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">21. What is Ephemeral State in flutter?.</h3>
+
+Ephemeral state (sometimes called UI state or local state) is the state you can neatly contain in a single widget. This is, intentionally, a vague definition, so here are a few examples. current page in a PageView.
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">22. When to use whenComplete() and then() in flutter?</h3>
+
+`whenComplete()` will fire a function either when the Future completes with an error or not, instead  `then()` will fire a function after the Future completes without an error.
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">23. What is the purpose of using safe area in flutter?</h3>
+
+In Flutter, the `SafeArea` widget is an essential component used to ensure that our app's content remains visible and accessible on the screen, even when the device has notches, status bars, or any other intrusions. It helps provide padding around our app's content, preventing any overlap with system UI elements.
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">24. When to use App State and Ephemeral State in flutter?</h3>
+
+* `App State:` Use for data shared across the entire app or multiple screens, like user authentication or global settings.
+
+* `Ephemeral State:` Use for temporary, widget-specific data like form input or local UI changes. It doesn't need to persist beyond the widget's lifecycle.
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">25. How Dart AOT Works?</h3>
+
+* Converts Dart code into native machine code before running.
+* Improves app startup performance.
+* Used for Flutter's release mode.
+* Generates more efficient, platform-specific binaries.
+* Requires compilation for each target platform (e.g., Android, iOS).
+* Results in larger binary sizes but faster execution.
+  
+</p>
+
 <br />
 <br />
 <br />
