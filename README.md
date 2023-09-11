@@ -680,6 +680,44 @@ In Flutter, the `SafeArea` widget is an essential component used to ensure that 
   
 </p>
 
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">25. Difference between async and async* in flutter</h3>
+
+`async:` It is used to define a function that returns a Future. It's used when you want to work with asynchronous operations and await their results. The function runs asynchronously and can pause and resume its execution using the await keyword.
+
+`async*:` It is used to define a function that returns a Stream. It's used when you want to create a sequence of asynchronous values over time. The function generates asynchronous data and yields it using the yield keyword, allowing consumers to listen for and process each value as it becomes available.
+
+In summary, `async` is for functions returning a single future, while `async*` is for functions that generate a stream of asynchronous values.
+  
+</p>
+
+<br/>
+<br/>
+<p align="start">
+<h3 style="margin-top: 0;" align="start">26. Similarities and Difference between Stream and Future in flutter</h3>
+
+**Similarities:**
+
+* Both are used for asynchronous programming in Flutter.
+* They can represent delayed or asynchronous operations.
+* Both can handle errors and exceptions.
+
+**Differences:**
+
+Future:
+* Represents a single asynchronous value or error.
+* Provides a one-time result when the operation completes.
+* Typically used for one-off asynchronous tasks.
+
+Stream:
+* Represents a sequence of asynchronous values or errors.
+* Can emit multiple values over time.
+* Ideal for continuous data updates and event streams.
+  
+</p>
+
 <br />
 <br />
 <br />
