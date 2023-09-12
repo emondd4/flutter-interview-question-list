@@ -784,6 +784,201 @@ A cookbook provides specific programming solutions for some common problems expe
 <br />
 <br />
 <p align="center">
+<h2 style="margin-top: 0;" align="center">SDLC Questions</h2>
+</p>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">1. What is SDLC?</h3>
+
+<br/>
+
+The Software Development Life Cycle (SDLC) is a well-defined procedure for producing high-quality, low-cost software in the shortest amount of time possible.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">2. What is the importance of the SDLC process?</h3>
+
+<br/>
+
+* Ensures systematic and organized software development.
+* Reduces risks, errors, and project failures.
+* Improves communication and collaboration among team members.
+* Enhances the quality and reliability of software products.
+* Provides a structured approach to project planning, execution, and maintenance.
+* Ensures that software meets user requirements and business needs.
+* Facilitates efficient resource allocation and cost management.
+* Supports documentation and compliance with industry standards and regulations.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">3. Explain the phases in a typical SDLC process.</h3>
+
+<br/>
+
+* **Planning:** The first stage of the SDLC is all about determining, what do clients want. Project planning is an important component of the software delivery lifecycle because it is here that the team estimates the cost and outlines the new program's needs.
+* **Gathering Requirements:** Defining requirements is part of the planning process to figure out what the application is supposed to perform and what it needs. The development team examines the requirements while keeping the software's design and code in mind.
+* **Design:** The following phase entails distilling all of the software project's requirements, analysis, and design information. This phase is the culmination of the previous two, such as customer feedback and requirement collecting. It is a simulation of how a software application will work. Some particulars of this phase are architecture, platform, security and user interface.
+* **Development:** This is where the code is really written. Writing code is the first step in putting a design into action. Developers must adhere to the coding requirements set forth by their bosses. Many other jobs are included in the coding process. Many developers need to brush up on their abilities or collaborate with others. It's vital to find and resolve problems and flaws. If any changes or upgrades are needed, the developers can show the work to the business analysts.
+* **Testing:** Before making an application available to users, it's vital to test it. The testing team examines the system's overall functionality. This phase aids with reducing the number of faults and issues seen by consumers. As a result, there is a higher level of user satisfaction and a higher rate of utilisation.
+* **Deployment:** Once the product has been thoroughly tested and is ready for deployment, it is made available to customers. The deployment's complexity is determined by the project's size. Many businesses prefer to have the deployment step automated.
+* **Maintenance:** The developed product is looked after throughout this period. The programme is updated on a regular basis to keep up with the changing user end environment or technology. Users find flaws that were not discovered during testing. These issues must be addressed, which may result in new development cycles.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">4. Explain the types of SDLC models.</h3>
+
+<br/>
+
+**Waterfall model:** The waterfall model is a prominent software engineering and product development approach that takes a linear, sequential approach to the software development life cycle (SDLC). The waterfall approach emphasises a logical step-by-step process. It was the first model in the software business to be extensively adopted. It is divided into phases, with one phase's output becoming the input for the next. Learn More.
+**Agile model:** Agile approaches divide jobs into smaller iterations or sections and avoid long-term planning entirely. The scope and requirements of the project are defined at the start of the development phase. The number of iterations, duration, and scope of each iteration are all clearly determined ahead of time. In the Agile process model, each iteration is a small-time "frame" that lasts anywhere from one to four weeks. Learn More.
+**Iterative model:** One of the most straightforward software development life cycle models is the iterative approach. There are several situations when the initial or basic software requirements are well-defined, but the project's complete scope or set of features is unclear. It primarily focuses on preliminary growth and design, then gradually develops momentum as more complex and needs are met until the final software is completely constructed. Learn More.
+**Spiral model:** The spiral model is a risk management strategy that combines the iterative development process model with parts of the Waterfall approach. The spiral approach is preferred by software engineers for large, expensive, and complex projects. Learn More.
+**V-model model:** The V-model is an SDLC paradigm in which processes are executed in a V-shape in a sequential manner. The Verification and Validation model is another name for it. The waterfall model is extended by the V-Model. Every phase of the development cycle has a testing phase that is directly linked to it.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">5. What is SRS?</h3>
+
+<br/>
+
+A Software Requirements Specification (SRS) is a document that explains what the software will accomplish and how it will work.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">6. What is a Feasibility Study?</h3>
+
+<br/>
+
+As the name implies, a feasibility study is an analysis or measurement of a software product in terms of how advantageous product development will be for the business in terms of practicality. It determines whether the project is legally, technically, and commercially feasible.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">7. What is the testing phase in the SDLC model?</h3>
+
+<br/>
+
+One of the most important procedures in the Software Development Lifecycle is testing (SDLC). It enables businesses to do a thorough evaluation of software and verify that their product meets the expectations of their customers.
+
+**Levels of Testing**
+* Unit Test (Test Individual Component)
+* Integration Test (Test Integrated Component)
+* System Test (Test the Entire System)
+* Acceptance Test (Test the Fianl System)
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">8. Which SDLC model is best and Why?</h3>
+
+<br/>
+
+According to the annual State of Agile report, `Agile` is the best `SDLC methodology` and also one of the most widely utilised SDLC in the IT industry. Unlike other predictive approaches, the adaptive agile methodology does not necessitate comprehensive preparation. If a change is required, it can be made during the sprint. It's ideal for projects that require a lot of customer involvement and projects that have a constantly changing environment.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">8. Which SDLC model is best and Why?</h3>
+
+<br/>
+
+According to the annual State of Agile report, `Agile` is the best `SDLC methodology` and also one of the most widely utilised SDLC in the IT industry. Unlike other predictive approaches, the adaptive agile methodology does not necessitate comprehensive preparation. If a change is required, it can be made during the sprint. It's ideal for projects that require a lot of customer involvement and projects that have a constantly changing environment.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">9. Advantages of SDLC.</h3>
+
+<br/>
+
+**Structured Approach:** Provides a systematic and organized framework for software development.
+**Quality Assurance:** Ensures higher software quality through testing and validation phases.
+**Risk Mitigation:** Identifies and mitigates project risks early in the development process.
+**Clear Requirements:** Helps define and document user requirements accurately.
+**Cost Management:** Allows for better resource allocation and budget control.
+**Efficiency:** Improves efficiency through proper planning and project management.
+**Communication:** Enhances communication among project stakeholders.
+**Maintenance:** Facilitates easier software maintenance and updates.
+**Compliance:** Supports adherence to industry standards and regulations.
+**Customer Satisfaction:** Results in software that meets user needs and expectations.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">10. Disadvantages of SDLC.</h3>
+
+<br/>
+
+**Rigidity:** Can be inflexible when changes are required during development.
+**Time-Consuming:** May result in longer development times, especially for complex projects.
+**Resource Intensive:** Requires substantial resources, including time, personnel, and costs.
+**Overhead:** The formal process can introduce administrative overhead.
+**Not Ideal for Small Projects:** May be overly structured for small-scale projects.
+**Limited Agility:** Can hinder quick responses to rapidly changing requirements.
+**Possible Over-Documentation:** May lead to excessive documentation, slowing down development.
+**Risk of Scope Creep:** Strictly following the plan may result in scope creep.
+**User Involvement:** Requires consistent user involvement throughout, which may not always be feasible.
+**Not Suitable for All Projects:** Not every project requires the same level of formality and structure.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">11. Explain HLD (High-Level Design) in SDLC.</h3>
+
+<br/>
+
+* HLD is the architectural and structural blueprint of a software system.
+* It defines the system's components, their interactions, and major functionalities.
+* Focuses on system-level decisions, not detailed implementation.
+* Helps ensure that the system's design aligns with project requirements.
+* Serves as a guide for lower-level design and development phases.
+* Provides a high-level view of the system's organization and behavior.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">12. Explain LLD (Low-Level Design) in SDLC.</h3>
+
+<br/>
+
+* LLD is the detailed design phase in software development.
+* It translates the high-level design into specific technical details.
+* Specifies how each component or module will be implemented.
+* Includes data structures, algorithms, and code organization.
+* Guides developers in writing the actual code for the system.
+* Precedes coding and is a bridge between HLD and coding phases.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">13. What is the Software release process?</h3>
+
+<br/>
+
+The Software Development Life Cycle (SDLC) release phase is historically connected with production, deployment, and post-production operations, which generally include software maintenance and support. So, release management is the process of managing, planning, scheduling, and controlling a full software development at every stage and environment, including testing and releasing software releases.
+
+<br/>
+
+<p align="start">
+<h3 style="margin-top: 0;" align="start">14. Differentiate between quality assurance and quality control?</h3>
+
+<br/>
+
+* Quality Assurance ensures that the software delivered has the fewest possible defects. Quality Control is the process of ensuring that a product's quality is maintained over time.
+* Quality Assurance is handled by the project's testing team, whereas Quality Control is handled by a dedicated support team that is accountable for the product's quality even if it is in the maintenance phase of software engineering.
+
+<br/>
+
+<br />
+<br />
+<br />
+<br />
+<p align="center">
 <h2 style="margin-top: 0;" align="center">Flutter Basic OS Level Question</h2>
 </p>
 
