@@ -895,28 +895,28 @@ According to the annual State of Agile report, `Agile` is the best `SDLC methodo
 <br/>
 
 <p align="start">
-<h3 style="margin-top: 0;" align="start">8. Which SDLC model is best and Why?</h3>
-
-<br/>
-
-According to the annual State of Agile report, `Agile` is the best `SDLC methodology` and also one of the most widely utilised SDLC in the IT industry. Unlike other predictive approaches, the adaptive agile methodology does not necessitate comprehensive preparation. If a change is required, it can be made during the sprint. It's ideal for projects that require a lot of customer involvement and projects that have a constantly changing environment.
-
-<br/>
-
-<p align="start">
 <h3 style="margin-top: 0;" align="start">9. Advantages of SDLC.</h3>
 
 <br/>
 
 **Structured Approach:** Provides a systematic and organized framework for software development.
+
 **Quality Assurance:** Ensures higher software quality through testing and validation phases.
+
 **Risk Mitigation:** Identifies and mitigates project risks early in the development process.
+
 **Clear Requirements:** Helps define and document user requirements accurately.
+
 **Cost Management:** Allows for better resource allocation and budget control.
+
 **Efficiency:** Improves efficiency through proper planning and project management.
+
 **Communication:** Enhances communication among project stakeholders.
+
 **Maintenance:** Facilitates easier software maintenance and updates.
+
 **Compliance:** Supports adherence to industry standards and regulations.
+
 **Customer Satisfaction:** Results in software that meets user needs and expectations.
 
 <br/>
