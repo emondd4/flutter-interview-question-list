@@ -927,14 +927,23 @@ According to the annual State of Agile report, `Agile` is the best `SDLC methodo
 <br/>
 
 **Rigidity:** Can be inflexible when changes are required during development.
+
 **Time-Consuming:** May result in longer development times, especially for complex projects.
+
 **Resource Intensive:** Requires substantial resources, including time, personnel, and costs.
+
 **Overhead:** The formal process can introduce administrative overhead.
+
 **Not Ideal for Small Projects:** May be overly structured for small-scale projects.
+
 **Limited Agility:** Can hinder quick responses to rapidly changing requirements.
+
 **Possible Over-Documentation:** May lead to excessive documentation, slowing down development.
+
 **Risk of Scope Creep:** Strictly following the plan may result in scope creep.
+
 **User Involvement:** Requires consistent user involvement throughout, which may not always be feasible.
+
 **Not Suitable for All Projects:** Not every project requires the same level of formality and structure.
 
 <br/>
