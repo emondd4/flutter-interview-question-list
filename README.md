@@ -2607,27 +2607,29 @@ io.to('roomName').emit('event', data);
 Dio is a powerful and flexible HTTP client for Dart and Flutter applications. It is inspired by the JavaScript Fetch API but provides additional features and customization options. Dio supports various request methods like GET, POST, PUT, DELETE, etc., and it allows you to interact with different types of data, including JSON, form data, and files.
 Key features of Dio include:
 
-Concurrent requests: Dio supports making multiple HTTP requests simultaneously, which can be beneficial for improving app performance.
+**Concurrent requests:** Dio supports making multiple HTTP requests simultaneously, which can be beneficial for improving app performance.
 
-Interceptors: It allows you to intercept and modify requests and responses globally, adding custom headers, error handling, logging, etc.
+**Interceptors:** It allows you to intercept and modify requests and responses globally, adding custom headers, error handling, logging, etc.
 
-FormData: Dio provides a FormData class for easily sending data as multipart/form-data, which is useful for file uploads.
+**FormData:** Dio provides a FormData class for easily sending data as multipart/form-data, which is useful for file uploads.
 
-Cancel requests: You can cancel ongoing requests with Dio, which is handy for managing request lifecycle in complex applications.
+**Cancel requests:** You can cancel ongoing requests with Dio, which is handy for managing request lifecycle in complex applications.
 
-Customization: Dio offers a high level of customization, making it suitable for various use cases.
+**Customization:** Dio offers a high level of customization, making it suitable for various use cases.
+
+<br/>
 
 **HTTP (http package)**:
 HTTP is a straightforward HTTP client package for Dart and Flutter applications. It provides a minimalistic and easy-to-use API for making HTTP requests. While it lacks some advanced features found in Dio, it still serves as a robust option for simple HTTP operations.
 Key features of the HTTP package include:
 
-Simplicity: The HTTP package is straightforward to use, making it an excellent choice for simple API interactions.
+**Simplicity:** The HTTP package is straightforward to use, making it an excellent choice for simple API interactions.
 
-Async/await support: It works well with async/await, allowing for a clean and readable code structure.
+**Async/await support:** It works well with async/await, allowing for a clean and readable code structure.
 
-Basic HTTP methods: The HTTP package supports common HTTP methods like GET, POST, PUT, DELETE, etc.
+**Basic HTTP methods:** The HTTP package supports common HTTP methods like GET, POST, PUT, DELETE, etc.
 
-Decoding JSON: It includes built-in support for decoding JSON responses.
+**Decoding JSON:** It includes built-in support for decoding JSON responses.
 
 **Differences between Dio and HTTP in Flutter**:
 
