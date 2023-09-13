@@ -833,13 +833,21 @@ The Software Development Life Cycle (SDLC) is a well-defined procedure for produ
 <br/>
 
 **Waterfall model:** The waterfall model is a prominent software engineering and product development approach that takes a linear, sequential approach to the software development life cycle (SDLC). The waterfall approach emphasises a logical step-by-step process. It was the first model in the software business to be extensively adopted. It is divided into phases, with one phase's output becoming the input for the next. Learn More.
+
 <br/>
+
 **Agile model:** Agile approaches divide jobs into smaller iterations or sections and avoid long-term planning entirely. The scope and requirements of the project are defined at the start of the development phase. The number of iterations, duration, and scope of each iteration are all clearly determined ahead of time. In the Agile process model, each iteration is a small-time "frame" that lasts anywhere from one to four weeks. Learn More.
+
 <br/>
+
 **Iterative model:** One of the most straightforward software development life cycle models is the iterative approach. There are several situations when the initial or basic software requirements are well-defined, but the project's complete scope or set of features is unclear. It primarily focuses on preliminary growth and design, then gradually develops momentum as more complex and needs are met until the final software is completely constructed. Learn More.
+
 <br/>
+
 **Spiral model:** The spiral model is a risk management strategy that combines the iterative development process model with parts of the Waterfall approach. The spiral approach is preferred by software engineers for large, expensive, and complex projects. Learn More.
+
 <br/>
+
 **V-model model:** The V-model is an SDLC paradigm in which processes are executed in a V-shape in a sequential manner. The Verification and Validation model is another name for it. The waterfall model is extended by the V-Model. Every phase of the development cycle has a testing phase that is directly linked to it.
 
 <br/>
