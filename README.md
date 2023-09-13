@@ -2608,9 +2608,13 @@ Dio is a powerful and flexible HTTP client for Dart and Flutter applications. It
 Key features of Dio include:
 
 Concurrent requests: Dio supports making multiple HTTP requests simultaneously, which can be beneficial for improving app performance.
+
 Interceptors: It allows you to intercept and modify requests and responses globally, adding custom headers, error handling, logging, etc.
+
 FormData: Dio provides a FormData class for easily sending data as multipart/form-data, which is useful for file uploads.
+
 Cancel requests: You can cancel ongoing requests with Dio, which is handy for managing request lifecycle in complex applications.
+
 Customization: Dio offers a high level of customization, making it suitable for various use cases.
 
 **HTTP (http package)**:
@@ -2618,8 +2622,11 @@ HTTP is a straightforward HTTP client package for Dart and Flutter applications.
 Key features of the HTTP package include:
 
 Simplicity: The HTTP package is straightforward to use, making it an excellent choice for simple API interactions.
+
 Async/await support: It works well with async/await, allowing for a clean and readable code structure.
+
 Basic HTTP methods: The HTTP package supports common HTTP methods like GET, POST, PUT, DELETE, etc.
+
 Decoding JSON: It includes built-in support for decoding JSON responses.
 
 **Differences between Dio and HTTP in Flutter**:
