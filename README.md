@@ -1903,14 +1903,17 @@ A Cubit is a special type of BLoC that emphasizes simplicity and ease of use. It
 **State Management Approach:**
 
 **Cubit:** A Cubit maintains a single stream of states. State changes are typically synchronous and are handled using methods that emit new states.
+
 **Traditional BLoC:** A traditional BLoC often has separate streams for events and states. It processes events asynchronously and emits corresponding states to the state stream.
 Simplicity:
 
 **Cubit:** Cubits are designed to be simpler and easier to use. They are a good choice for managing simple state changes without the need for complex asynchronous operations.
+
 **Traditional BLoC:** Traditional BLoCs are more flexible and suitable for scenarios where you need to handle complex asynchronous operations, combine multiple streams, or manage intricate business logic.
 Less Boilerplate:
 
 **Cubit:** Cubits tend to have less boilerplate code due to their streamlined approach. They automatically handle a lot of the setup and stream management.
+
 **Traditional BLoC:** Traditional BLoCs may require more boilerplate code for managing event and state streams, which can be beneficial for more complex scenarios.
 
 <br/>
